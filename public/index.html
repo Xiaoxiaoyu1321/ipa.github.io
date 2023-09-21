@@ -1,0 +1,34 @@
+{% extends "includes/layout.j2" %}
+{% block title  %}{{ title }}{% endblock %}
+{% block header %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="selector">
+        <ul>
+            {% for initial, packages in initials.items() %}
+                <a href="#{{initial}}"><li>{{ initial }}</li></a>
+            {% endfor %}
+        </ul>
+    </div>
+    {% for initial, packages in initials.items() %}
+        <div class="section section-{{initial | lower}}">
+            <div class="section-header">
+                <h2 id="{{initial}}">{{ initial }}</h2>
+                <span><a href="#top">回到顶部</a></span>
+            </div>
+            <ul class="section-content">
+                {% for package in packages %}
+                    <a href="/package/{{ package['bundle'] }}">
+                        <li>
+                            <img src="/assets/icon/{{ package['bundle'] }}.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>{{ package['name'] }}</h3>
+                                <span>{{ len(package['versions']) }} 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+{% endblock %}

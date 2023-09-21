@@ -1,0 +1,26 @@
+title: xyiPA
+email: xiaoxiaoyu@xiaoxiaoyu.org
+domain: ipa.xiaoyustudio.com
+copyright: Xiaoyu Studio
+
+packages:
+  - name: QQ 邮箱
+    bundle: com.QQMail
+    comment: |
+      注：无法登录 QQ 邮箱，但可以登录 Outlook / Exchage
+    versions:
+      - version: "4.0.1"
+        download: https://xiaoyucloud114514.oss-cn-hangzhou.aliyuncs.com/ipa/QQMail/QQMail_4_0_1.ipa
+      - version: "5.0.0"
+        download: https://xiaoyucloud114514.oss-cn-hangzhou.aliyuncs.com/ipa/QQMail/QQMail_5_0_0.ipa
+  - name: 微信
+    bundle: com.wechat
+    comment: |
+      注：7.0.2 为 32 位设备最后可用版本
+    versions:
+      - version: "6.2.0"
+        download: https://xiaoyucloud114514.oss-cn-hangzhou.aliyuncs.com/ipa/WeChat/WeChat_6.2.0.ipa
+      - version: "6.6.0"
+        download: https://xiaoyucloud114514.oss-cn-hangzhou.aliyuncs.com/ipa/WeChat/WeChat_6.6.0.ipa
+      - version: "7.2.0"
+        download: https://xiaoyucloud114514.oss-cn-hangzhou.aliyuncs.com/ipa/WeChat/WeChat_7.2.0.ipa

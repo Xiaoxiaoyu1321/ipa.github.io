@@ -1,0 +1,46 @@
+{% extends "includes/layout.j2" %}
+{% block title  %}404 Not Found - {{ title }}{% endblock %}
+{% block header %}
+    <span style="margin-top: 8rem; margin-bottom: 3rem; display: block;">
+        404 Not Found
+    </span>
+{% endblock %}
+
+{% block content %}
+<p class="section-introduction">
+    欸嘿？<br>您访问的页面不存在，它可能被移动到其他地方、被删除或是被天依吃掉了。
+</p>
+
+<style>
+    .button-back {
+        margin: 3rem auto;
+    }
+
+    .button-back a {
+        padding: 1rem 2rem;
+        border: 1px solid #bbbbbb;
+        color: #808080;
+        border-radius: 1rem;
+    }
+
+    .button-back:hover a {
+        background: #efefef;
+        border: 1px solid #808080;
+    }
+
+    img {
+        display: block;
+        width: 80%;
+        max-width: 200px;
+    }
+</style>
+
+<center>
+    <img src="/assets/404.gif" alt="404 Not Found"/>
+    <div class="button-back">
+        <a href="/">
+            返回首页
+        </a>
+    </div>
+</center>
+{% endblock %}

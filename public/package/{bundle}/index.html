@@ -1,0 +1,28 @@
+{% extends "includes/layout.j2" %}
+{% block title  %}{{ name }} - {{ title }}{% endblock %}
+{% block header %}{{ name }}{% endblock %}
+
+{% block content %}
+    <div class="section">
+        <div class="section-header">
+            <h2>版本</h2>
+            <span><a href="/">回到首页</a></span>
+        </div>
+        <ul class="section-content">
+            {% for version in versions %}
+                <a href="itms-services://?action=download-manifest&amp;url=https://{{domain}}/package/{{ bundle }}/{{ version['version'] }}.plist">
+                    <li>
+                        <img src="/assets/icon/{{ bundle }}.png" alt="Icon"/>
+                        <div class="app-detail">
+                            <h3>{{ name }}</h3>
+                            <span>版本 {{ version['version'] }} </span>
+                        </div>
+                    </li>
+                </a>
+            {% endfor %}
+        </ul>
+        <p class="section-introduction">
+            {{ comment }}
+        </p>
+    </div>
+{% endblock %}

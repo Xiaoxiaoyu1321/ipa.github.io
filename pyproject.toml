@@ -1,0 +1,25 @@
+[project]
+name = "xyipa"
+version = "1.0.0"
+description = ""
+authors = [
+    {name = "Xiaoxiaoyu", email = "xiaoxiaoyu@xiaoxiaoyu.org"},
+    {name = "Joseph Chris", email = "joseph@josephcz.xyz"},
+]
+dependencies = [
+    "pyyaml~=6.0.1",
+    "jinja2~=3.1.2",
+    "htmlmin~=0.1.12",
+    "pypinyin~=0.49.0",
+    "semver~=3.0.1",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.scripts]
+app = "python3 app.py"
