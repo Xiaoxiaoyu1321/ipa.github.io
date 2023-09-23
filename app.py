@@ -199,6 +199,7 @@ def build(args: argparse.Namespace) -> None:
     generage('index.html', render.render_index())
     generage('404.html', render.render_404())
     generage('source.json', json.dumps(render.data))
+    generage('CNAME', Render.load_data()['domain'])
     for asset in os.listdir(f"{PUBLIC_PATH}/assets"):
         if asset.startswith('.'):
             continue
