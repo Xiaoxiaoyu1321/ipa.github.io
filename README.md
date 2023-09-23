@@ -26,6 +26,6 @@ pdm run app build
 请确保相关图标以 `<bundle_id>.png` 的形式放置在 `data/icons` 目录下。
 
 ## 自动化部署
-此项目支持基于 GitHub Actions 自动化部署。请确保您已启用 GitHub Actions，在项目被推送到 GitHub 时，将自动触发构建与部署。、
+此项目支持基于 GitHub Actions 自动化部署。请确保您已启用 GitHub Actions，在项目被推送到 GitHub 时，将自动触发构建与部署。
 
 部署结果输出于 `static-pages` 分支下。您可以使用 GitHub Pages、Cloudflare Pages 或 Vercel 等服务进行托管。

@@ -3,7 +3,6 @@ import json
 import yaml
 import shutil
 import semver
-import htmlmin
 import argparse
 import functools
 from datetime import datetime
@@ -109,10 +108,7 @@ class Render:
             for k, v in data.items():
                 view[k] = v
         html = template.render(view)
-        if not minify:
-            return html
-        minified_html = htmlmin.minify(html, remove_comments=True, remove_empty_space=True)
-        return minified_html
+        return html
     
     def render_index(self) -> str:
         return self.render('index.html')
