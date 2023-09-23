@@ -22,5 +22,5 @@ packages:
         download: https://xiaoyucloud114514.oss-cn-hangzhou.aliyuncs.com/ipa/WeChat/WeChat_6.2.0.ipa
       - version: "6.6.0"
         download: https://xiaoyucloud114514.oss-cn-hangzhou.aliyuncs.com/ipa/WeChat/WeChat_6.6.0.ipa
-      - version: "7.2.0"
+      - version: "7.0.2"
         download: https://xiaoyucloud114514.oss-cn-hangzhou.aliyuncs.com/ipa/WeChat/WeChat_7.2.0.ipa
