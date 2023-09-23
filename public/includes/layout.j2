@@ -21,7 +21,7 @@
         {% block content %}{% endblock %}
         <div class="footer">
             Copyright &copy{{ now.strftime('%Y') }}
-            <a target="_blank" href="">{{ copyright }}</a> |
+            <a target="_blank" href="{{ copyright['url'] }}">{{ copyright['name'] }}</a> |
             Email: <a href="#email" class="protected-email">(protected)</a>
         </div>
     </div>

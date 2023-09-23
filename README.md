@@ -21,7 +21,7 @@ pdm run app build
 构建结果输出于 `dist` 目录下。
 
 ## 添加应用与图标
-配置文件位于 `data/manifest.json`，请根据实际情况进行修改。
+配置文件位于 `data/manifest.yaml`，请根据实际情况进行修改。
 
 请确保相关图标以 `<bundle_id>.png` 的形式放置在 `data/icons` 目录下。
 

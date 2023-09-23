@@ -20,7 +20,12 @@ jobs:
       - name: Install dependencies
         run: pdm install
       - name: Build
-        run: pdm run app build
+        run: pdm run app build --clean --cname ipa.xiaoyustudio.com
+      - name: Upload OSS
+        run: pdm run app upload
+        env:
+          OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
+          OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
       - name: Push to branch
         run: |
             git config --local user.email "github-actions@users.noreply.github.com"

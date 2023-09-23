@@ -10,7 +10,7 @@
         </div>
         <ul class="section-content">
             {% for version in versions %}
-                <a href="itms-services://?action=download-manifest&amp;url=https://{{domain}}/package/{{ bundle }}/{{ version['version'] }}.plist">
+                <a href="itms-services://?action=download-manifest&amp;url={{ cdn_base_url }}/package/{{ bundle }}/{{ version['version'] }}.plist">
                     <li>
                         <img src="/assets/icon/{{ bundle }}.png" alt="Icon"/>
                         <div class="app-detail">
