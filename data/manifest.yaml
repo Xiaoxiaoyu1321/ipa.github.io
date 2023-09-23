@@ -7,7 +7,7 @@ packages:
   - name: QQ 邮箱
     bundle: com.QQMail
     comment: |
-      注：无法登录 QQ 邮箱，但可以登录 Outlook / Exchage
+      注：无法登录 QQ 邮箱，但可以登录 Outlook / Exchage，也可以登录其他邮箱，不要使用内置的
     versions:
       - version: "4.0.1"
         download: https://xiaoyucloud114514.oss-cn-hangzhou.aliyuncs.com/ipa/QQMail/QQMail_4_0_1.ipa
