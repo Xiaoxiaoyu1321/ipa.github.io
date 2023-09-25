@@ -64,4 +64,29 @@ packages:
       - version: "0.13.0"
       - version: "0.14.1"
       - version: "0.14.3"
-  
+  - name: 哔哩哔哩
+    bundle: com.chenrui.bilibili
+    comment: |
+      欢呼着哔哩哔哩 次元咒语
+      解开你心中的谜题
+      找寻自己 存在的目的
+      再次相信 你就是唯一
+    versions:
+      - version: "3.6.3"
+        ios_version: "6.0"
+      - version: "4.34"
+        ios_version: "7.0"
+      - version: "5.14"
+        ios_version: "8.0"
+      - version: "5.44.2"
+        ios_version: "8.0"
+      - version: "5.46.1"
+        ios_version: "8.0"
+      - version: "5.52.1"
+        ios_version: "9.0"
+      - version: "6.0.0"
+        ios_version: "9.0"
+      - version: "6.6.0"
+        ios_version: "9.0"
+      - version: "6.19.0"
+        ios_version: "9.0"
