@@ -3,6 +3,8 @@ email: xiaoxiaoyu@xiaoxiaoyu.org
 copyright:
   name: Xiaoyu Studio
   url: https://www.xiaoyustudio.com
+banner: |
+  欢迎使用 xyiPA
 
 oss:
   bucket: ipa-guangzhou
@@ -16,7 +18,11 @@ packages:
       注：无法登录 QQ 邮箱，但可以登录 Outlook / Exchage，也可以登录其他邮箱，不要使用内置的
     versions:
       - version: "4.0.1"
+        ios_version: "7.0"
+        size_mb: 0
       - version: "5.0.0"
+        ios_version: "7.0"
+        size_mb: 0
   - name: 微信
     bundle: com.wechat
     comment: |

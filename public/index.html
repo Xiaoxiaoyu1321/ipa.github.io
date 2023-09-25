@@ -16,6 +16,9 @@
                 <h2 id="{{initial}}">{{ initial }}</h2>
                 <span><a href="#top">回到顶部</a></span>
             </div>
+            <p class="section-introduction">
+                {{ banner }}
+            </p>
             <ul class="section-content">
                 {% for package in packages %}
                     <a href="/package/{{ package['bundle'] }}/">

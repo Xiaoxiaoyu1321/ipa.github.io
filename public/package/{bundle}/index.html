@@ -15,7 +15,14 @@
                         <img src="/assets/icon/{{ bundle }}.png" alt="Icon"/>
                         <div class="app-detail">
                             <h3>{{ name }}</h3>
-                            <span>版本 {{ version['version'] }} </span>
+                            <span>{{ version['version'] }}
+                                {% if version.get('ios_version') %}
+                                    | iOS {{ version['ios_version'] }}
+                                {% endif %}
+                            </span>
+                            {% if version.get('size_mb') %}
+                                <span>{{ "%.2f" | format(version['size_mb']) }} MB</span>
+                            {% endif %}
                         </div>
                     </li>
                 </a>
