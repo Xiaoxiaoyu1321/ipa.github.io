@@ -4,7 +4,10 @@ copyright:
   name: Xiaoyu Studio
   url: https://www.xiaoyustudio.com
 banner: |
-  欢迎使用 xyiPA
+  欢迎使用 xyiPA <br>
+  点击切换线路：<a href="https://ipa.xiaoyustudio.com">主线</a> |
+  <a href="https://ipa2.xiaoyustudio.com">高防</a> |
+  <a href="https://xiaoxiaoyu1321.gitee.io/ipa">国内</a>
 
 oss:
   bucket: ipa-guangzhou

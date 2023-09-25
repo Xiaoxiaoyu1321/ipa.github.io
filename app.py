@@ -87,6 +87,7 @@ class Render:
         data['cdn_base_url'] = f"https://{data['oss']['bucket']}.{data['oss']['endpoint']}/{data['oss']['prefix']}".rstrip('/')
         data = ensure_initials(data)
         data = sort_versions(data)
+        data['prefix'] = ''
         return data
 
     @staticmethod
@@ -209,6 +210,7 @@ def build(args: argparse.Namespace) -> None:
         shutil.copy(source, abspath)
     
     render = Render.load()
+    render.data['prefix'] = args.prefix
     generage('index.html', render.render_index())
     generage('404.html', render.render_404())
     generage(MANIFEST_JSON, render.render_manifest())
@@ -259,6 +261,7 @@ def main() -> None:
     subcommand_build.add_argument('-c', '--clean', action='store_true', help='Clean the dist folder before running')
     subcommand_build.add_argument('-d', '--dist', type=str, default='dist', help='the dist folder, default to dist/')
     subcommand_build.add_argument('--cname', type=str, default=None, help='the CNAME for GitHub Pages')
+    subcommand_build.add_argument('--prefix', type=str, default='', help='the prefix of web root path')
 
     subcommand_build = subparsers.add_parser('upload', help='Upload to OSS')
     

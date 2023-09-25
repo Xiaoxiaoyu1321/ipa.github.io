@@ -6,13 +6,13 @@
     <div class="section">
         <div class="section-header">
             <h2>版本</h2>
-            <span><a href="/">回到首页</a></span>
+            <span><a href="{{ prefix }}/">回到首页</a></span>
         </div>
         <ul class="section-content">
             {% for version in versions %}
                 <a href="itms-services://?action=download-manifest&amp;url={{ cdn_base_url }}/package/{{ bundle }}/{{ version['version'] }}.plist">
                     <li>
-                        <img src="/assets/icon/{{ bundle }}.png" alt="Icon"/>
+                        <img src="{{ prefix }}/assets/icon/{{ bundle }}.png" alt="Icon"/>
                         <div class="app-detail">
                             <h3>{{ name }}</h3>
                             <span>{{ version['version'] }}
