@@ -29,7 +29,7 @@
             {% endfor %}
         </ul>
         <p class="section-introduction">
-            {{ comment }}
+            {{ comment | replace("\n", "<br/>")}}
         </p>
     </div>
 {% endblock %}
