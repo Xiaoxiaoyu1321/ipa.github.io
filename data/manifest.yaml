@@ -61,8 +61,6 @@ packages:
       - version: "11.17.1"
         ios_version: "11.0"
 
-
-
   - name: 支付宝
     bundle: com.alipay
     versions:
