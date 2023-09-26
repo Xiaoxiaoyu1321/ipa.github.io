@@ -10,7 +10,7 @@
         </div>
         <ul class="section-content">
             {% for version in versions %}
-                <a href="itms-services://?action=download-manifest&amp;url={{ cdn_base_url }}/package/{{ bundle }}/{{ version['version'] }}.plist">
+                <a href="itms-services://?action=download-manifest&amp;url={{ plist_url(bundle, version['version']) }}">
                     <li>
                         <img src="{{ prefix }}/assets/icon/{{ bundle }}.png" alt="Icon"/>
                         <div class="app-detail">
@@ -20,8 +20,8 @@
                                     | iOS {{ version['ios_version'] }}
                                 {% endif %}
                             </span>
-                            {% if version.get('size_mb') %}
-                                <span>{{ "%.2f" | format(version['size_mb']) }} MB</span>
+                            {% if version.get('size') %}
+                                <span>{{ size_format(version['size']).strip() }}</span>
                             {% endif %}
                         </div>
                     </li>

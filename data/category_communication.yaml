@@ -6,10 +6,8 @@ packages:
     versions:
       - version: "4.0.1"
         ios_version: "5.0"
-        size_mb: 28.35
       - version: "5.0.0"
         ios_version: "6.0"
-        size_mb: 83.37
 
   - name: 微信
     bundle: com.wechat
@@ -18,13 +16,10 @@ packages:
     versions:
       - version: "6.2.0"
         ios_version: "6.0"
-        size_mb: 0
       - version: "6.6.0"
         ios_version: "8.0"
-        size_mb: 0
       - version: "7.0.2"
       - version: "7.0.18"
         ios_version: "11.0"
-        size_mb: 263
       - version: "8.0.6"
         ios_version: "11.0"

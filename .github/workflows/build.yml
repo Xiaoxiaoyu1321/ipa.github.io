@@ -7,6 +7,10 @@ on:
 permissions:
   contents: write
 
+env:
+  OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
+  OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,9 +29,6 @@ jobs:
         run: pdm run app build --clean --prefix /ipa --dist dist-gitee
       - name: Upload OSS
         run: pdm run app upload
-        env:
-          OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
-          OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
       - name: Push to branch
         run: |
             git config --local user.email "github-actions@users.noreply.github.com"

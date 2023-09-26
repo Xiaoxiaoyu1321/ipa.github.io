@@ -12,7 +12,7 @@ packages:
   - name: 网易云音乐HD
     bundle: com.netease.music.hd
     comment: |
-      网易云音乐专为iPad 高分辨率屏幕优化的版本
+      网易云音乐专为 iPad 高分辨率屏幕优化的版本
     versions:
       - version: "1.3.0"
         ios_version: "6.0"

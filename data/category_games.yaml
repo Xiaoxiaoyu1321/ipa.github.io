@@ -2,9 +2,8 @@ packages:
   - name: MinecraftPE
     bundle: com.MinecraftPE
     comment: |
-      iPhone、iPad 皆可使用
-      注：0.14.1 版本可能需要安装AppSync 才能使用
-      本下载站暂未与任何个人或组织合作
+      iPhone / iPad 皆可使用
+      0.14.1 版本可能需要安装 AppSync 才能使用
     versions:
       - version: "0.13.0"
       - version: "0.14.1"

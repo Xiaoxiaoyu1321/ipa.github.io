@@ -6,7 +6,7 @@ groups = ["default"]
 cross_platform = true
 static_urls = false
 lock_version = "4.3"
-content_hash = "sha256:ec3a6fd8b043c7c498f0c016bd965cf89d57858457aff14f2433bc61a7fe15f4"
+content_hash = "sha256:eea3489d871b2f9986a5a9987b0f74ff378a122199646a01588e38de04d185c8"
 
 [[package]]
 name = "aliyun-python-sdk-core"

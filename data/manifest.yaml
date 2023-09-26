@@ -28,13 +28,7 @@ packages:
   - name: Microsoft Office
     bundle: com.microsoft.office
     comment: |
-      Microsoft 365是最终的日常生产力应用，可帮助你随时随地创建、编辑和共享。借助Word、Excel 和PowerPoint ,
-      Microsoft 365是在你最需要文档时动态创建和编辑文档的目标。
-      在Word中编写博客、在Excel中管理预算或在PowerPoint中练习下一一个商业宣传很容易。借助集成的编辑功能,
-      Microsoft 365是一个触手可及的完整文档编辑器。 你还可以扫描重要文档并对重要文档进行签名,创建PDF ,并在任何位
-      置更新简历,只需点击几下即可。
-      借助智能云服务和受信任的安全性, Microsoft 365应用可帮助你在工作和生活中最大限度地提高工作效率。
-      Word、Excel 和PowerPoint全部在一个应用中:
+      Word、Excel 和 PowerPoint
     versions:
       - version: "1.2.1"
         ios_version: "7.0"
@@ -48,7 +42,7 @@ packages:
   - name: 搜狗输入法
     bundle: com.sogou.input
     comment: |
-      iOS 8 以前需要越狱，在Cydia 中安装，则此处的ipa 不起作用。
+      iOS 8 以前需要越狱，在Cydia 中安装，则此处的 IPA 不起作用
     versions:
       - version: "1.0.5"
         ios_version: "8.0"
