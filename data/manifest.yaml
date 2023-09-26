@@ -180,9 +180,9 @@ packages:
   - name: 哔哩哔哩动画HD
     bundle: com.chenrui.bilibilihd
     versions:
-      - version: "2.1"
+      - version: "2.1.0"
         ios_version: "8.0"
-      - version: "2.4"
+      - version: "2.4.0"
         ios_version: "9.0"
     
     
