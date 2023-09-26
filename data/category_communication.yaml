@@ -1,0 +1,30 @@
+packages:
+  - name: QQ 邮箱
+    bundle: com.QQMail
+    comment: |
+      注：无法登录 QQ 邮箱，但可以登录 Outlook / Exchage，也可以登录其他邮箱，不要使用内置的
+    versions:
+      - version: "4.0.1"
+        ios_version: "5.0"
+        size_mb: 28.35
+      - version: "5.0.0"
+        ios_version: "6.0"
+        size_mb: 83.37
+
+  - name: 微信
+    bundle: com.wechat
+    comment: |
+      注：7.0.2 为 32 位设备最后可用版本
+    versions:
+      - version: "6.2.0"
+        ios_version: "6.0"
+        size_mb: 0
+      - version: "6.6.0"
+        ios_version: "8.0"
+        size_mb: 0
+      - version: "7.0.2"
+      - version: "7.0.18"
+        ios_version: "11.0"
+        size_mb: 263
+      - version: "8.0.6"
+        ios_version: "11.0"
