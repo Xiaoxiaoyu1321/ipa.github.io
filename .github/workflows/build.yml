@@ -19,8 +19,10 @@ jobs:
       - uses: pdm-project/setup-pdm@v3
       - name: Install dependencies
         run: pdm install
-      - name: Build
+      - name: Build Cloudflare / GitHub Pages
         run: pdm run app build --clean --cname ipa.xiaoyustudio.com
+      - name: Build Gitee
+        run: pdm run app build --clean --prefix /ipa --dist dist-gitee
       - name: Upload OSS
         run: pdm run app upload
         env:
@@ -31,44 +33,13 @@ jobs:
             git config --local user.email "github-actions@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
             cp -r .git dist
+            cp -r .git dist-gitee
             cd dist
             git checkout --orphan static-pages
             git add -A
             git commit -m "Auto update at $(date -u '+%Y-%m-%d %H:%M:%S %Z')"
             git push -f -u origin static-pages
-
-  build-gitee:
-    runs-on: ubuntu-latest
-    name: Build for Gitee
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10' 
-      - uses: pdm-project/setup-pdm@v3
-      - name: Install dependencies
-        run: pdm install
-      - name: Build
-        run: pdm run app build --clean --prefix /ipa
-      - name: Deploy to Gitee Pages
-        uses: kw214/gitee-pages@v1
-        with:
-          external_repository: Xiaoxiaoyu1321/ipa
-          username: Xiaoxiaoyu1321
-          user_name: Xiaoxiaoyu1321
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          personal_token: ${{ secrets.GITEE_PAT }}
-          publish_branch: gitee-pages
-          publish_dir: ./dist
-          allow_empty_commit: true
-          keep_files: false
-          force_orphan: true
-      - name: Push to branch (gitee-pages)
-        run: |
-            git config --local user.email "github-actions@users.noreply.github.com"
-            git config --local user.name "github-actions[bot]"
-            cp -r .git dist
-            cd dist
+            cd ../dist-gitee
             git checkout --orphan gitee-pages
             git add -A
             git commit -m "Auto update at $(date -u '+%Y-%m-%d %H:%M:%S %Z')"
