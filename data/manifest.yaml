@@ -8,6 +8,8 @@ banner: |
   点击切换线路：<a href="https://ipa.xiaoyustudio.com">主线</a> |
   <a href="https://ipa2.xiaoyustudio.com">高防</a> |
   <a href="https://xiaoxiaoyu1321.gitee.io/ipa">国内</a>
+  <br>
+  本站使用图片、文件等来源于互联网，若有侵权，请联系更换或删除
 
 oss:
   bucket: ipa-guangzhou
@@ -120,3 +122,51 @@ packages:
         ios_version: "8.0"
       - version: "11.17.1"
         ios_version: "11.0"
+
+  - name: Microsoft Office
+    bundle: com.microsoft.office
+    comment: |
+      Microsoft 365是最终的日常生产力应用，可帮助你随时随地创建、编辑和共享。借助Word、Excel 和PowerPoint ,
+      Microsoft 365是在你最需要文档时动态创建和编辑文档的目标。
+      在Word中编写博客、在Excel中管理预算或在PowerPoint中练习下一一个商业宣传很容易。借助集成的编辑功能,
+      Microsoft 365是一个触手可及的完整文档编辑器。 你还可以扫描重要文档并对重要文档进行签名,创建PDF ,并在任何位
+      置更新简历,只需点击几下即可。
+      借助智能云服务和受信任的安全性, Microsoft 365应用可帮助你在工作和生活中最大限度地提高工作效率。
+      Word、Excel 和PowerPoint全部在一个应用中:
+    versions:
+      - version: "1.2.1"
+        ios_version: "7.0"
+      - version: "2.34.1"
+        ios_version: "12.0"
+      - version: "2.41.1"
+        ios_version: "12.0"
+      - version: "2.51.0"
+        ios_version: "13.0"
+  - name: 支付宝
+    bundle: com.alipay
+    versions:
+      - version: "8.4.0"
+        ios_version: "5.0"
+      - version: "8.6.2"
+        ios_version: "6.0"
+      - version: "9.9.0"
+        ios_version: "7.0"
+      - version: "10.0.8"
+        ios_version: "7.0"
+  - name: 酷狗音乐
+    bundle: com.kugou
+    versions:
+      - version: "7.0.6"
+        ios_version: "5.0"
+      - version: "7.1.3"
+        ios_version: "5.1.1"
+      - version: "7.9.9"
+        ios_version: "6.0"
+      - version: "8.2.0"
+        ios_version: "7.0"
+      - version: "8.8.0"
+        ios_version: "7.0"
+      - version: "9.1.0"
+        ios_version: "8.0"
+
+    
