@@ -233,6 +233,7 @@ def upload(args: argparse.Namespace) -> None:
     args.clean = True
     args.dist = 'ossdist'
     args.cname = None
+    args.prefix = ''
     build(args)
 
     data = Render.load().data
