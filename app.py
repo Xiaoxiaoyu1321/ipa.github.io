@@ -78,7 +78,7 @@ class Render:
                     key=functools.cmp_to_key(lambda x, y: semver.compare(x['version'], y['version']))
                 )
                 for j, version in enumerate(data['packages'][i]['versions']):
-                    data['packages'][i]['versions'][j]['url'] = f"{data['cdn_base_url']}/package/{package['bundle']}/{package['bundle']}_{version['version']}.ipa"
+                    data['packages'][i]['versions'][j]['url'] = f"{data['cdn_base_url']}/package/{package['bundle']}/{package['bundle']}_{version['version']}.xyi"
             return data
 
         with open(f"{DATA_PATH}/{MANIFEST_PATH}", encoding="utf-8") as f:
