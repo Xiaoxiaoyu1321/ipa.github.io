@@ -66,6 +66,8 @@ packages:
     bundle: com.MinecraftPE
     comment: |
       iPhone、iPad 皆可使用
+      注：0.14.1 版本可能需要安装AppSync 才能使用
+      本下载站暂未与任何个人或组织合作
     versions:
       - version: "0.13.0"
       - version: "0.14.1"
@@ -106,7 +108,7 @@ packages:
   - name: 搜狗输入法
     bundle: com.sogou.input
     comment: |
-      iOS 8 以前需要越狱
+      iOS 8 以前需要越狱，在Cydia 中安装，则此处的ipa 不起作用。
     versions:
       - version: "1.0.5"
         ios_version: "8.0"
