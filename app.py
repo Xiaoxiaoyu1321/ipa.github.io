@@ -303,7 +303,9 @@ def build(args: argparse.Namespace) -> None:
             continue
         copy(f"assets/{asset}", f"{PUBLIC_PATH}/assets/{asset}")
     for package in render.data['packages']:
-        copy(f"assets/icon/{package['bundle']}.png", f"{ICON_PATH}/{package['bundle']}.png")
+        icon = f"{ICON_PATH}/{package['bundle']}.png"
+        if os.path.exists(icon):
+            copy(f"assets/icon/{package['bundle']}.png", icon)
         generage(f"package/{package['bundle']}/index.html", render.render_package(package['bundle']))
         for version in package['versions']:
             generage(f"package/{package['bundle']}/{version['version']}.plist", render.render_plist(package['bundle'], version['version']))
