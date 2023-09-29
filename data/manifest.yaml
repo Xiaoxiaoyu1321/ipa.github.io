@@ -66,3 +66,16 @@ packages:
         ios_version: "7.0"
       - version: "10.0.8"
         ios_version: "7.0"
+  - name: Kindle
+    bundle: com.kindle
+    comment: |
+      4.10 版本支持 iOS 7.0+ 32位设备，有支持iOS 6 的包，但是目前我这里没有
+    versions:
+      - version: "6.5.9"
+        ios_version: "14.0"
+      - version: "6.29.1"
+        ios_version: "12.0"
+      - version: "6.2.1"
+        ios_version: "9.0"
+      - version: "4.10.0"
+        ios_version: "7.0"
