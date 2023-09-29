@@ -66,6 +66,7 @@ packages:
         ios_version: "7.0"
       - version: "10.0.8"
         ios_version: "7.0"
+  
   - name: Kindle
     bundle: com.kindle
     comment: |
@@ -79,3 +80,45 @@ packages:
         ios_version: "9.0"
       - version: "4.10.0"
         ios_version: "7.0"
+
+  - name: 钉钉
+    bundle: com.dingtalk
+    comment: |
+      最低iOS 7，不能再低了
+    versions:
+      - version: "1.2.0"
+        ios_version: "7.0"
+      - version: "4.1.0"
+        ios_version: "7.0"
+      - version: "4.3.0"
+        ios_version: "8.0"
+      - version: "4.3.5"
+        ios_version: "8.0"
+      - version: "5.0.0"
+        ios_version: "9.0"
+      - version: "5.1.9"
+        ios_version: "9.0"
+      - version: "5.1.25"
+        ios_version: "9.0"
+      - version: "6.0.3"
+        ios_version: "10.0"
+      - version: "6.0.28"
+        ios_version: "10.0"
+      - version: "7.0.0"
+        ios_version: "11.0"
+  - name: 高德地图
+    bundle: com.gddt
+    comment: |
+      老版本概率可以加载地图，但是无法导航
+    versions:
+      - version: "7.1.2"
+        ios_version: "6.0"
+      - version: "8.2.8"
+        ios_version: "7.0"
+      - version: "8.70.2"
+        ios_version: "8.0"
+      - version: "9.10.0"
+        ios_version: "10.0"
+      - version: "10.30.5"
+        ios_version: "10.0"
+  
