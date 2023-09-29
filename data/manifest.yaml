@@ -66,6 +66,7 @@ packages:
         ios_version: "7.0"
       - version: "10.0.8"
         ios_version: "7.0"
+
   - name: Kindle
     bundle: com.kindle
     comment: |
