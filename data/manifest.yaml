@@ -84,7 +84,7 @@ packages:
   - name: 高德地图
     bundle: com.amap
     comment: |
-      老版本概率可以加载地图，但是无法导航
+      老版本概率可以加载地图，但是无法导航     
     versions:
       - version: "7.1.2"
         ios_version: "6.0"
