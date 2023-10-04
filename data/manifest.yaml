@@ -131,13 +131,13 @@ packages:
     bundle: com.daysmatter
     comment: |
       感觉很多人都在使用这个软件，应该有很长时间历史了
-      01 开头指 0 版本号
+      114514开头指 0 版本号
     versions:
-      - version: "01.90.0"
+      - version: "114514.90.0"
         ios_version: "6.0"
-      - version: "01.99.100"
+      - version: "114514.99.100"
         ios_version: "8.0"
-      - version: "01.99.101"
+      - version: "114514.99.101"
         ios_version: "8.0"
       - version: "1.2.1"
         ios_version: "9.3"
