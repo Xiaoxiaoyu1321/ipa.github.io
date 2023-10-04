@@ -131,7 +131,7 @@ packages:
     bundle: com.daysmatter
     comment: |
       感觉很多人都在使用这个软件，应该有很长时间历史了
-      114514开头指 0 版本号
+      系统原因，114514开头指 0 版本号
     versions:
       - version: "114514.90.0"
         ios_version: "6.0"
