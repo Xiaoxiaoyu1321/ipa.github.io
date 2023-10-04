@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="google" content="notranslate">
+    <link rel="icon" type="image/x-icon" href="/ipa/assets/logo.png">
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    background: #f6f6f6;
+}
+
+a {
+    color: #3070c0;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover {
+    color: #66ccff;
+    border-bottom: 2px solid #66ccff;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.header-title {
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    clear: both;
+}
+
+.selector {
+    float: right;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.selector ul {
+    display: block;
+    list-style: none;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 0 .2rem;
+}
+
+.selector a {
+    display: block;
+    border-bottom: none;
+    width: 1.5rem;
+    padding: .2rem;
+}
+
+.selector a:hover {
+    border: none;
+    background: #e0e0e0;
+    border-radius: .8rem;
+}
+
+.selector li {
+    display: block;
+    width: 100%;
+}
+
+.section {
+    padding-right: 2rem;
+}
+
+.section-header {
+    border-bottom: 1px solid #ccc;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin-bottom: 1rem;
+    clear: both;
+    float: none;
+}
+
+.section-header h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.section-header span {
+    float: right;
+}
+
+.section-content {
+    background: #fff;
+    border-radius: .8rem;
+    list-style: none;
+    padding: 0;
+    clear: both;
+    float: none;
+}
+
+.section-content a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    padding: .5rem 1.2rem;
+}
+
+.section-content a:hover {
+    color: black;
+    background: #ebebeb;
+    border-bottom: 1px solid #ccc;
+}
+
+.section-content a:first-child {
+    border-top-left-radius: .8rem;
+    border-top-right-radius: .8rem;
+}
+
+.section-content a:last-child {
+    border-bottom-left-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+    border-bottom: none;
+}
+
+.section-content li {
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.section-content li img {
+    width: 40px;
+    height: 40px;
+    border-radius: .5rem;
+    float: left;
+}
+
+.section-content .app-detail {
+    display: inline-block;
+    margin-left: .8rem;
+    height: 40px;
+}
+
+.section-content .app-detail h3 {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+    text-wrap: nowrap;
+}
+
+.section-content .app-detail span {
+    display: block;
+    font-size: .8rem;
+    color: #9c9c9c;
+}
+
+.section-introduction {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #808080;
+}
+
+.footer {
+    font-size: .9rem;
+    color: #9c9c9c;
+}
+
+.footer a {
+    color: #bbbbbb;
+}
+
+.footer a:hover {
+    color: #66ccff;
+}
+
+@media screen and (min-width: 400px) {
+    .section-content li img {
+        width: 60px;
+        height: 60px;
+        border-radius: .8rem;
+    }
+
+    .section-content .app-detail {
+        height: 60px;
+    }
+
+    .section-content .app-detail h3 {
+        font-size: 1.2rem;
+        margin-bottom: .15rem;
+    }
+
+    .section-content .app-detail span {
+        font-size: .9rem;
+    }
+}
+    </style>
+    <title>MinecraftPE - xyiPA</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="header-title" id="top">MinecraftPE</h1>
+        </div>
+        
+    <div class="section">
+        <div class="section-header">
+            <h2>版本</h2>
+            <span><a href="/ipa/">回到首页</a></span>
+        </div>
+        <ul class="section-content">
+            
+                <a href="itms-services://?action=download-manifest&amp;url=https://ipa-guangzhou.oss-cn-guangzhou.aliyuncs.com/tfsv1/package/com.MinecraftPE/0.14.3.plist">
+                    <li>
+                        <img src="/ipa/assets/icon/com.MinecraftPE.png" alt="Icon"/>
+                        <div class="app-detail">
+                            <h3>MinecraftPE</h3>
+                            <span>0.14.3
+                                
+                            </span>
+                            
+                                <span>29.18 MB</span>
+                            
+                        </div>
+                    </li>
+                </a>
+            
+                <a href="itms-services://?action=download-manifest&amp;url=https://ipa-guangzhou.oss-cn-guangzhou.aliyuncs.com/tfsv1/package/com.MinecraftPE/0.14.1.plist">
+                    <li>
+                        <img src="/ipa/assets/icon/com.MinecraftPE.png" alt="Icon"/>
+                        <div class="app-detail">
+                            <h3>MinecraftPE</h3>
+                            <span>0.14.1
+                                
+                            </span>
+                            
+                                <span>24.43 MB</span>
+                            
+                        </div>
+                    </li>
+                </a>
+            
+                <a href="itms-services://?action=download-manifest&amp;url=https://ipa-guangzhou.oss-cn-guangzhou.aliyuncs.com/tfsv1/package/com.MinecraftPE/0.13.0.plist">
+                    <li>
+                        <img src="/ipa/assets/icon/com.MinecraftPE.png" alt="Icon"/>
+                        <div class="app-detail">
+                            <h3>MinecraftPE</h3>
+                            <span>0.13.0
+                                
+                            </span>
+                            
+                                <span>25.26 MB</span>
+                            
+                        </div>
+                    </li>
+                </a>
+            
+        </ul>
+        <p class="section-introduction">
+            iPhone / iPad 皆可使用<br/>0.14.1 版本可能需要安装 AppSync 才能使用<br/>
+        </p>
+    </div>
+
+        <div class="footer">
+            Copyright &copy2023
+            <a target="_blank" href="https://www.xiaoyustudio.com">Xiaoyu Studio</a> |
+            Email: <a href="#email" class="protected-email">(protected)</a>
+        </div>
+    </div>
+    <script>
+        function encodeEmail(text) {
+    var result = [];
+    for (var i = 0; i < text.length; i++) {
+        if (i % 2 === 0) {
+            result[i] = text.charCodeAt(i) + 0x66ccff;
+        } else {
+            result[i] = text.charCodeAt(i) - 0xee0000;
+        }
+    }
+    return result.join(".");
+}
+
+function decodeEmail(data) {
+    var numbers = data.split(".");
+    var result = "";
+    for (var i = 0; i < numbers.length; i++) {
+        if (i % 2 === 0) {
+            result += String.fromCharCode(parseInt(numbers[i]) - 0x66ccff);
+        } else {
+            result += String.fromCharCode(parseInt(numbers[i]) + 0xee0000);
+        }
+    }
+    return result;
+}
+        (function() {
+            document.querySelector('.protected-email').innerText =             decodeEmail("6737271.-15597463.6737248.-15597457.6737271.-15597463.6737248.-15597457.6737272.-15597451.6737215.-15597448.6737256.-15597471.6737262.-15597448.6737256.-15597471.6737262.-15597447.6737268.-15597522.6737262.-15597454.6737254");
+            document.querySelector('.protected-email').href      = 'mailto:' + decodeEmail("6737271.-15597463.6737248.-15597457.6737271.-15597463.6737248.-15597457.6737272.-15597451.6737215.-15597448.6737256.-15597471.6737262.-15597448.6737256.-15597471.6737262.-15597447.6737268.-15597522.6737262.-15597454.6737254");
+        })();
+    </script>
+</body>
+</html>
