@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="google" content="notranslate">
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    background: #f6f6f6;
+}
+
+a {
+    color: #3070c0;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover {
+    color: #66ccff;
+    border-bottom: 2px solid #66ccff;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.header-title {
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    clear: both;
+}
+
+.selector {
+    float: right;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.selector ul {
+    display: block;
+    list-style: none;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 0 .2rem;
+}
+
+.selector a {
+    display: block;
+    border-bottom: none;
+    width: 1.5rem;
+    padding: .2rem;
+}
+
+.selector a:hover {
+    border: none;
+    background: #e0e0e0;
+    border-radius: .8rem;
+}
+
+.selector li {
+    display: block;
+    width: 100%;
+}
+
+.section {
+    padding-right: 2rem;
+}
+
+.section-header {
+    border-bottom: 1px solid #ccc;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin-bottom: 1rem;
+    clear: both;
+    float: none;
+}
+
+.section-header h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.section-header span {
+    float: right;
+}
+
+.section-content {
+    background: #fff;
+    border-radius: .8rem;
+    list-style: none;
+    padding: 0;
+    clear: both;
+    float: none;
+}
+
+.section-content a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    padding: .5rem 1.2rem;
+}
+
+.section-content a:hover {
+    color: black;
+    background: #ebebeb;
+    border-bottom: 1px solid #ccc;
+}
+
+.section-content a:first-child {
+    border-top-left-radius: .8rem;
+    border-top-right-radius: .8rem;
+}
+
+.section-content a:last-child {
+    border-bottom-left-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+    border-bottom: none;
+}
+
+.section-content li {
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.section-content li img {
+    width: 40px;
+    height: 40px;
+    border-radius: .5rem;
+    float: left;
+}
+
+.section-content .app-detail {
+    display: inline-block;
+    margin-left: .8rem;
+    height: 40px;
+}
+
+.section-content .app-detail h3 {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+    text-wrap: nowrap;
+}
+
+.section-content .app-detail span {
+    display: block;
+    font-size: .8rem;
+    color: #9c9c9c;
+}
+
+.section-introduction {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #808080;
+}
+
+.footer {
+    font-size: .9rem;
+    color: #9c9c9c;
+}
+
+.footer a {
+    color: #bbbbbb;
+}
+
+.footer a:hover {
+    color: #66ccff;
+}
+
+@media screen and (min-width: 400px) {
+    .section-content li img {
+        width: 60px;
+        height: 60px;
+        border-radius: .8rem;
+    }
+
+    .section-content .app-detail {
+        height: 60px;
+    }
+
+    .section-content .app-detail h3 {
+        font-size: 1.2rem;
+        margin-bottom: .15rem;
+    }
+
+    .section-content .app-detail span {
+        font-size: .9rem;
+    }
+}
+    </style>
+    <title>xyiPA</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="header-title" id="top">xyiPA</h1>
+        </div>
+        
+    <div class="selector">
+        <ul>
+            
+                <a href="#A"><li>A</li></a>
+            
+                <a href="#B"><li>B</li></a>
+            
+                <a href="#D"><li>D</li></a>
+            
+                <a href="#G"><li>G</li></a>
+            
+                <a href="#K"><li>K</li></a>
+            
+                <a href="#M"><li>M</li></a>
+            
+                <a href="#Q"><li>Q</li></a>
+            
+                <a href="#S"><li>S</li></a>
+            
+                <a href="#W"><li>W</li></a>
+            
+                <a href="#Z"><li>Z</li></a>
+            
+        </ul>
+    </div>
+    <p class="section-introduction" style="padding-right: 2rem;">
+        欢迎使用 xyiPA <br>
+点击切换线路：<a href="https://ipa.xiaoyustudio.com">主线</a> |
+<a href="https://ipa2.xiaoyustudio.com">高防</a> |
+<a href="https://xiaoxiaoyu1321.gitee.io/ipa">国内</a>
+<br>
+本站使用图片、文件等来源于互联网，若有侵权，请联系更换或删除
+
+    </p>
+    
+        <div class="section section-a">
+            <div class="section-header">
+                <h2 id="A">A</h2>
+                <span><a href="#top">回到顶部</a></span>
+            </div>
+            <ul class="section-content">
+                
+                    <a href="/package/com.acfun/">
+                        <li>
+                            <img src="/assets/icon/com.acfun.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>AcFun</h3>
+                                <span>3 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+            </ul>
+        </div>
+    
+        <div class="section section-b">
+            <div class="section-header">
+                <h2 id="B">B</h2>
+                <span><a href="#top">回到顶部</a></span>
+            </div>
+            <ul class="section-content">
+                
+                    <a href="/package/com.chenrui.bilibili/">
+                        <li>
+                            <img src="/assets/icon/com.chenrui.bilibili.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>哔哩哔哩</h3>
+                                <span>9 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+                    <a href="/package/com.chenrui.bilibilihd/">
+                        <li>
+                            <img src="/assets/icon/com.chenrui.bilibilihd.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>哔哩哔哩动画HD</h3>
+                                <span>2 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+            </ul>
+        </div>
+    
+        <div class="section section-d">
+            <div class="section-header">
+                <h2 id="D">D</h2>
+                <span><a href="#top">回到顶部</a></span>
+            </div>
+            <ul class="section-content">
+                
+                    <a href="/package/com.daysmatter/">
+                        <li>
+                            <img src="/assets/icon/com.daysmatter.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>倒数日</h3>
+                                <span>5 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+                    <a href="/package/com.dingtalk/">
+                        <li>
+                            <img src="/assets/icon/com.dingtalk.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>钉钉</h3>
+                                <span>10 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+            </ul>
+        </div>
+    
+        <div class="section section-g">
+            <div class="section-header">
+                <h2 id="G">G</h2>
+                <span><a href="#top">回到顶部</a></span>
+            </div>
+            <ul class="section-content">
+                
+                    <a href="/package/com.google.authmenticator/">
+                        <li>
+                            <img src="/assets/icon/com.google.authmenticator.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>Google Authenticator</h3>
+                                <span>1 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+                    <a href="/package/com.amap/">
+                        <li>
+                            <img src="/assets/icon/com.amap.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>高德地图</h3>
+                                <span>5 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+            </ul>
+        </div>
+    
+        <div class="section section-k">
+            <div class="section-header">
+                <h2 id="K">K</h2>
+                <span><a href="#top">回到顶部</a></span>
+            </div>
+            <ul class="section-content">
+                
+                    <a href="/package/com.kugou/">
+                        <li>
+                            <img src="/assets/icon/com.kugou.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>酷狗音乐</h3>
+                                <span>6 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+                    <a href="/package/com.kindle/">
+                        <li>
+                            <img src="/assets/icon/com.kindle.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>Kindle</h3>
+                                <span>4 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+            </ul>
+        </div>
+    
+        <div class="section section-m">
+            <div class="section-header">
+                <h2 id="M">M</h2>
+                <span><a href="#top">回到顶部</a></span>
+            </div>
+            <ul class="section-content">
+                
+                    <a href="/package/com.meitu/">
+                        <li>
+                            <img src="/assets/icon/com.meitu.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>美图秀秀</h3>
+                                <span>5 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+                    <a href="/package/com.microsoft.office/">
+                        <li>
+                            <img src="/assets/icon/com.microsoft.office.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>Microsoft Office</h3>
+                                <span>4 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+                    <a href="/package/com.MinecraftPE/">
+                        <li>
+                            <img src="/assets/icon/com.MinecraftPE.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>MinecraftPE</h3>
+                                <span>3 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+            </ul>
+        </div>
+    
+        <div class="section section-q">
+            <div class="section-header">
+                <h2 id="Q">Q</h2>
+                <span><a href="#top">回到顶部</a></span>
+            </div>
+            <ul class="section-content">
+                
+                    <a href="/package/com.QQMail/">
+                        <li>
+                            <img src="/assets/icon/com.QQMail.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>QQ 邮箱</h3>
+                                <span>2 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+            </ul>
+        </div>
+    
+        <div class="section section-s">
+            <div class="section-header">
+                <h2 id="S">S</h2>
+                <span><a href="#top">回到顶部</a></span>
+            </div>
+            <ul class="section-content">
+                
+                    <a href="/package/com.sogou.input/">
+                        <li>
+                            <img src="/assets/icon/com.sogou.input.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>搜狗输入法</h3>
+                                <span>5 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+            </ul>
+        </div>
+    
+        <div class="section section-w">
+            <div class="section-header">
+                <h2 id="W">W</h2>
+                <span><a href="#top">回到顶部</a></span>
+            </div>
+            <ul class="section-content">
+                
+                    <a href="/package/com.WPS.office/">
+                        <li>
+                            <img src="/assets/icon/com.WPS.office.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>WPS Office</h3>
+                                <span>6 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+                    <a href="/package/com.netease.music/">
+                        <li>
+                            <img src="/assets/icon/com.netease.music.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>网易云音乐</h3>
+                                <span>2 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+                    <a href="/package/com.netease.music.hd/">
+                        <li>
+                            <img src="/assets/icon/com.netease.music.hd.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>网易云音乐HD</h3>
+                                <span>2 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+                    <a href="/package/com.wechat/">
+                        <li>
+                            <img src="/assets/icon/com.wechat.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>微信</h3>
+                                <span>5 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+            </ul>
+        </div>
+    
+        <div class="section section-z">
+            <div class="section-header">
+                <h2 id="Z">Z</h2>
+                <span><a href="#top">回到顶部</a></span>
+            </div>
+            <ul class="section-content">
+                
+                    <a href="/package/com.alipay/">
+                        <li>
+                            <img src="/assets/icon/com.alipay.png" alt="Icon"/>
+                            <div class="app-detail">
+                                <h3>支付宝</h3>
+                                <span>4 个版本</span>
+                            </div>
+                        </li>
+                    </a>                    
+                
+            </ul>
+        </div>
+    
+
+        <div class="footer">
+            Copyright &copy2023
+            <a target="_blank" href="https://www.xiaoyustudio.com">Xiaoyu Studio</a> |
+            Email: <a href="#email" class="protected-email">(protected)</a>
+        </div>
+    </div>
+    <script>
+        function encodeEmail(text) {
+    var result = [];
+    for (var i = 0; i < text.length; i++) {
+        if (i % 2 === 0) {
+            result[i] = text.charCodeAt(i) + 0x66ccff;
+        } else {
+            result[i] = text.charCodeAt(i) - 0xee0000;
+        }
+    }
+    return result.join(".");
+}
+
+function decodeEmail(data) {
+    var numbers = data.split(".");
+    var result = "";
+    for (var i = 0; i < numbers.length; i++) {
+        if (i % 2 === 0) {
+            result += String.fromCharCode(parseInt(numbers[i]) - 0x66ccff);
+        } else {
+            result += String.fromCharCode(parseInt(numbers[i]) + 0xee0000);
+        }
+    }
+    return result;
+}
+        (function() {
+            document.querySelector('.protected-email').innerText =             decodeEmail("6737271.-15597463.6737248.-15597457.6737271.-15597463.6737248.-15597457.6737272.-15597451.6737215.-15597448.6737256.-15597471.6737262.-15597448.6737256.-15597471.6737262.-15597447.6737268.-15597522.6737262.-15597454.6737254");
+            document.querySelector('.protected-email').href      = 'mailto:' + decodeEmail("6737271.-15597463.6737248.-15597457.6737271.-15597463.6737248.-15597457.6737272.-15597451.6737215.-15597448.6737256.-15597471.6737262.-15597448.6737256.-15597471.6737262.-15597447.6737268.-15597522.6737262.-15597454.6737254");
+        })();
+    </script>
+</body>
+</html>
