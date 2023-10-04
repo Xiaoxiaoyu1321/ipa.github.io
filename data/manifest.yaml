@@ -9,8 +9,9 @@ banner: |
   <a href="https://ipa2.xiaoyustudio.com">高防</a> |
   <a href="https://xiaoxiaoyu1321.gitee.io/ipa">国内</a>
   <br>
-  本站使用图片、文件等来源于互联网，若有侵权，请联系更换或删除
-
+  本站使用图片、文件等来源于互联网，若有侵权，请联系更换或删除。
+  您透过本网站下载的文件可能附带有其本身的版权，请尊重原有版权，下载包括但不限于有版权的文件时，请您按照原有版权规范进行并在24小时内删除您所下载的文件。
+  若因您的使用而产生的包括但不限于版权责任，将由用户承担，本站不承担任何责任。
 oss:
   bucket: ipa-guangzhou
   prefix: tfsv1
@@ -114,6 +115,7 @@ packages:
         ios_version: "11.0"
       - version: "11.0.0"
         ios_version: "12.0"
+
   - name: 美图秀秀
     bundle: com.meitu
     versions:
@@ -127,6 +129,7 @@ packages:
         ios_version: "9.0"
       - version: "9.3.5"
         ios_version: "12.0"
+
   - name: 倒数日
     bundle: com.daysmatter
     comment: |
@@ -143,3 +146,21 @@ packages:
         ios_version: "9.3"
       - version: "1.3.0"
         ios_version: "9.3"
+
+  - name: 腾讯会议
+    bundle: com.tencent.meeting
+    versions:
+      - version: "1.1.5"
+        ios_version: "9.0"
+      - version: "1.2.1"
+        ios_version: "9.0"
+      - version: "1.2.7"
+        ios_version: "9.0"
+      - versin: "1.5.0"
+        ios_version: "9.0"
+      - version: "1.9.0"
+        ios_version: "9.0"
+      - version: "2.13.3"
+        ios_version: "10.0"
+      - version: "3.5.4"
+        ios_version: "10.0"
